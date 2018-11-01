@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 editor.putString("edittext", etSharedPref.getText().toString());
                 //commit will make the change right away, apply will make changes in a different thread
                 editor.apply();
-                Toast.makeText(this, "Saved", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Data Saved", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnGetData:
                 String etValue = sharedPreferences.getString("edittext", "Default String");
